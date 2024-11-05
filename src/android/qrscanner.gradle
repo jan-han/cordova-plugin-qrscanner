@@ -1,0 +1,16 @@
+repositories {
+    // jcenter()
+    maven { url 'https://maven.aliyun.com/repository/jcenter'
+     allowInsecureProtocol true}
+    maven { url 'http://maven.aliyun.com/nexus/content/groups/public'
+     allowInsecureProtocol true}
+}
+
+dependencies {
+    implementation 'com.journeyapps:zxing-android-embedded:3.3.0'
+    implementation 'com.android.support:appcompat-v7:23.1.0'
+}
+
+android {
+    buildToolsVersion '23.0.2' // Older versions may give compile errors
+}
